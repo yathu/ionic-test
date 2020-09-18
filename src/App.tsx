@@ -2,11 +2,13 @@ import React from "react";
 import { Redirect, Route } from "react-router-dom";
 import {
   IonApp,
+  IonCard,
   IonCol,
   IonContent,
   IonGrid,
   IonHeader,
   IonIcon,
+  IonImg,
   IonLabel,
   IonRouterOutlet,
   IonRow,
@@ -50,19 +52,9 @@ const App: React.FC = () => (
     </IonHeader>
 
     <IonContent>
-      <IonGrid>
-        <IonRow>
-          <IonCol>
-            <div>1 of 3</div>
-          </IonCol>
-          <IonCol>
-            <div>2 of 3</div>
-          </IonCol>
-          <IonCol>
-            <div>3 of 3</div>
-          </IonCol>
-        </IonRow>
-      </IonGrid>
+      <IonCard class="ion-padding">
+        <IonImg src="https://picsum.photos/200" />
+      </IonCard>
     </IonContent>
   </IonApp>
 );
