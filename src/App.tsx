@@ -2,13 +2,16 @@ import React from "react";
 import { Redirect, Route } from "react-router-dom";
 import {
   IonApp,
+  IonBadge,
   IonCard,
+  IonCardTitle,
   IonCol,
   IonContent,
   IonGrid,
   IonHeader,
   IonIcon,
   IonImg,
+  IonItem,
   IonLabel,
   IonRouterOutlet,
   IonRow,
@@ -16,6 +19,7 @@ import {
   IonTabButton,
   IonTabs,
   IonTitle,
+  IonToggle,
   IonToolbar,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
@@ -40,8 +44,11 @@ import "@ionic/react/css/text-transformation.css";
 import "@ionic/react/css/flex-utils.css";
 import "@ionic/react/css/display.css";
 
+import { chevronUpCircleOutline } from "ionicons/icons";
+
 /* Theme variables */
 import "./theme/variables.css";
+import "./theme/style.css";
 
 const App: React.FC = () => (
   <IonApp>
@@ -52,8 +59,46 @@ const App: React.FC = () => (
     </IonHeader>
 
     <IonContent>
-      <IonCard class="ion-padding">
-        <IonImg src="https://picsum.photos/200" />
+      <IonCard class="ion-padding" color="dark">
+        <IonRow>
+          <IonCol size="auto">
+            <IonImg class="listing-thumbnail" src="https://picsum.photos/200" />
+          </IonCol>
+          <IonCol>
+            <IonGrid>
+              <IonRow>
+                <IonCol>
+                  <IonRow>
+                    <IonCol>
+                      <IonBadge color="primary">Sales</IonBadge>
+                    </IonCol>
+                    <IonCol>
+                      <IonIcon icon={chevronUpCircleOutline}></IonIcon>
+                    </IonCol>
+                  </IonRow>
+                </IonCol>
+                <IonCol size="auto">
+                  <IonItem class="toggle-container" lines="none" color="dark">
+                    <IonLabel class="ion-text-uppercase" color="success">
+                      Activate
+                    </IonLabel>
+                    <IonToggle
+                      class=""
+                      color="success"
+                      value="pepperoni"
+                      checked
+                    />
+                  </IonItem>
+                </IonCol>
+              </IonRow>
+              <IonRow>
+                <IonCardTitle>
+                  The information contained in this email
+                </IonCardTitle>
+              </IonRow>
+            </IonGrid>
+          </IonCol>
+        </IonRow>
       </IonCard>
     </IonContent>
   </IonApp>

@@ -1,0 +1,23 @@
+.listing-thumbnail {
+  width: 50px;
+  height: 50px;
+}
+
+ion-toggle {
+  --background: #dfdede;
+}
+
+.toggle-container {
+  border-radius: 25px;
+  border: 1px solid #2dd36f;
+  padding: 0px;
+}
+
+.toggle-container IonLabel {
+  font-size: 12px;
+}
+
+.toggle-container .item-inner {
+  padding-right: 0;
+  padding-inline-end: 0 !important;
+}
