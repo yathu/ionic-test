@@ -4,6 +4,7 @@ import {
   IonApp,
   IonBadge,
   IonCard,
+  IonCardSubtitle,
   IonCardTitle,
   IonCol,
   IonContent,
@@ -79,13 +80,16 @@ const App: React.FC = () => (
                 </IonCol>
                 <IonCol size="auto">
                   <IonItem class="toggle-container" lines="none" color="dark">
-                    <IonLabel class="ion-text-uppercase" color="success">
+                    <IonLabel
+                      class="ion-text-uppercase small-label ion-no-margin"
+                      color="success"
+                    >
                       Activate
                     </IonLabel>
                     <IonToggle
                       class=""
                       color="success"
-                      value="pepperoni"
+                      value="activate"
                       checked
                     />
                   </IonItem>
@@ -95,6 +99,7 @@ const App: React.FC = () => (
                 <IonCardTitle>
                   The information contained in this email
                 </IonCardTitle>
+                <IonCardSubtitle>this is subtitle</IonCardSubtitle>
               </IonRow>
             </IonGrid>
           </IonCol>

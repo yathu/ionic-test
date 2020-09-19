@@ -21,3 +21,18 @@ ion-toggle {
   padding-right: 0;
   padding-inline-end: 0 !important;
 }
+
+ion-toggle {
+  /* zoom: 0.5; */
+}
+
+.small-label {
+  font-size: 12px !important;
+}
+
+ion-toggle {
+  width: 40px;
+}
+ion-toggle {
+  height: 15px;
+}
