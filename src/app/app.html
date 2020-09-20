@@ -1,147 +1,161 @@
-<ion-card>
-  <ion-row>
-    <ion-col col-auto>
-      <img class="listing-thumbnail" src="https://picsum.photos/200" />
-      <button ion-button color="light" full>Ok</button>
-    </ion-col>
+<ion-content>
+  <ion-card class="listing-card">
+    <ion-row align-items-start>
+      <ion-col col-3 col-sm-3>
+        <img class="listing-thumbnail" src="https://picsum.photos/200" />
+      </ion-col>
 
-    <ion-col>
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-row>
-              <ion-col col-auto>
-                <ion-badge color="primary">Sales</ion-badge>
-              </ion-col>
-              <ion-col col-auto>
-                <ion-icon name="logo-twitter" item-start></ion-icon>
-              </ion-col>
-            </ion-row>
-          </ion-col>
+      <ion-col class="pl-10">
+        <ion-grid>
+          <ion-row class="toggle-row">
+            <ion-col>
+              <ion-row align-items-center>
+                <ion-col col-auto>
+                  <ion-badge class="custom-badge-primary">Sales</ion-badge>
+                </ion-col>
+                <ion-col col-auto class="pl-5">
+                  <ion-icon
+                    name="arrow-dropup-circle"
+                    class="color-primary"
+                  ></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-col>
 
-          <ion-col col-auto>
-            <ion-item class="toggle-container">
-              <ion-label class="small-label">Activate</ion-label>
-              <ion-toggle color="secondary" checked="false"></ion-toggle>
-            </ion-item>
-          </ion-col>
-        </ion-row>
+            <ion-col col-auto>
+              <ion-item class="toggle-container">
+                <ion-label>Activate</ion-label>
+                <ion-toggle color="secondary" checked="true"></ion-toggle>
+              </ion-item>
+            </ion-col>
+          </ion-row>
 
-        <ion-col col-12>
-          <ion-card-header>
-            Elegant luxuary modern build house
-          </ion-card-header>
-        </ion-col>
-        <span> <ion-icon name="pin"></ion-icon> sub title</span>
+          <ion-row>
+            <ion-col col-12>
+              <ion-card-header>
+                Elegant luxuary modern build house
+              </ion-card-header>
+              <span> <ion-icon name="pin"></ion-icon> sub title</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-3 col-sm-3>
+        <button ion-button color="light" full>Ok</button>
+      </ion-col>
+      <ion-col class="pl-10">
         <div>
           <ion-icon name="ios-camera-outline"></ion-icon>
           <ion-badge color="secondary">no images uploaded</ion-badge>
         </div>
-      </ion-grid>
-    </ion-col>
-  </ion-row>
-
-  <!-- 2nd row -->
-
-  <ion-row class="button-box-container">
-    <ion-col col-6>
-      <div class="upgrade-box">
-        <span>sample text this is</span>
-
-        <button ion-button icon-start full>
-          <ion-icon name="home"></ion-icon>
-          Left Icon
-        </button>
-      </div>
-    </ion-col>
-    <ion-col col-6>
-      <div class="boost-box">
-        <span>sample text this is</span>
-
-        <button ion-button icon-start full>
-          <ion-icon name="home"></ion-icon>
-          Left Icon
-        </button>
-      </div>
-    </ion-col>
-  </ion-row>
-
-  <!-- 3rd row for after buttons -->
-
-  <ion-row>
-    <ion-col col-auto>
-      <ion-item>
-        <ion-icon name="football" item-start></ion-icon>
-        <h2>Museum of Football</h2>
-        <p>11 N. Way St, Madison, WI 53703</p>
-      </ion-item>
-    </ion-col>
-    <ion-col col-auto>
-      <ion-item>
-        <ion-icon name="football" item-start></ion-icon>
-        <h2>Museum of Football</h2>
-        <p>11 N. Way St, Madison, WI 53703</p>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-
-  <!-- collapse button area -->
-  <ion-row justify-content-center>
-    <ion-col col-auto>
-      <button ion-button icon-end color="dark" id="viewMore" outline>
-        View More
-        <ion-icon name="home"></ion-icon>
-      </button>
-    </ion-col>
-  </ion-row>
-
-  <!-- expand area -->
-  <ion-grid id="expandAred">
-    <ion-row>
-      <ion-col>
-        <ion-list>
-          <ion-item>
-            <ion-icon name="football" item-start></ion-icon>
-            <h2>Museum of Football</h2>
-            <p>11 N. Way St, Madison, WI 53703</p>
-          </ion-item>
-
-          <ion-item>
-            <ion-icon name="football" item-start></ion-icon>
-            <h2>Museum of Football</h2>
-            <p>11 N. Way St, Madison, WI 53703</p>
-          </ion-item>
-        </ion-list>
-      </ion-col>
-
-      <ion-col>
-        <ion-list>
-          <ion-item>
-            <ion-icon name="football" item-start></ion-icon>
-            <h2>Museum of Football</h2>
-            <p>11 N. Way St, Madison, WI 53703</p>
-          </ion-item>
-
-          <ion-item>
-            <ion-icon name="football" item-start></ion-icon>
-            <h2>Museum of Football</h2>
-            <p>11 N. Way St, Madison, WI 53703</p>
-          </ion-item>
-        </ion-list>
       </ion-col>
     </ion-row>
 
+    <!-- 2nd row -->
+
+    <ion-row class="button-box-container">
+      <ion-col col-6>
+        <div class="upgrade-box">
+          <span>sample text this is</span>
+
+          <button ion-button icon-start full>
+            <ion-icon name="home"></ion-icon>
+            Left Icon
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="boost-box">
+          <span>sample text this is</span>
+
+          <button ion-button icon-start full>
+            <ion-icon name="home"></ion-icon>
+            Left Icon
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- 3rd row for after buttons -->
+
     <ion-row>
-      <ion-col class="px-10">
-        <button ion-button icon-only block outline>
+      <ion-col col-auto>
+        <ion-item>
+          <ion-icon name="football" item-start></ion-icon>
+          <h2>Museum of Football</h2>
+          <p>11 N. Way St, Madison, WI 53703</p>
+        </ion-item>
+      </ion-col>
+      <ion-col col-auto>
+        <ion-item>
+          <ion-icon name="football" item-start></ion-icon>
+          <h2>Museum of Football</h2>
+          <p>11 N. Way St, Madison, WI 53703</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- collapse button area -->
+    <ion-row justify-content-center>
+      <ion-col col-auto>
+        <button ion-button icon-end color="dark" id="viewMore" outline>
+          View More
           <ion-icon name="home"></ion-icon>
         </button>
       </ion-col>
-      <ion-col>
-        <button ion-button color="danger" block outline icon-only>
-          <ion-icon name="remove-circle" is-active="false"></ion-icon>
-        </button>
-      </ion-col>
     </ion-row>
-  </ion-grid>
-</ion-card>
+
+    <!-- expand area -->
+    <ion-grid id="expandAred">
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item>
+              <ion-icon name="football" item-start></ion-icon>
+              <h2>Museum of Football</h2>
+              <p>11 N. Way St, Madison, WI 53703</p>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="football" item-start></ion-icon>
+              <h2>Museum of Football</h2>
+              <p>11 N. Way St, Madison, WI 53703</p>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+
+        <ion-col>
+          <ion-list>
+            <ion-item>
+              <ion-icon name="football" item-start></ion-icon>
+              <h2>Museum of Football</h2>
+              <p>11 N. Way St, Madison, WI 53703</p>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="football" item-start></ion-icon>
+              <h2>Museum of Football</h2>
+              <p>11 N. Way St, Madison, WI 53703</p>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="px-10">
+          <button ion-button icon-only block outline>
+            <ion-icon name="home"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button color="danger" block outline icon-only>
+            <ion-icon name="remove-circle" is-active="false"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>

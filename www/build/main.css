@@ -25682,68 +25682,118 @@ ion-toggle {
   /* zoom: 0.5; */
 }
 
-.small-label {
-  font-size: 12px !important;
+.listing-card {
+  padding: 5px;
 }
 
-.card .listing-thumbnail {
-  width: 75px;
-  height: 75px;
+.listing-card ion-col {
+  padding: 0;
 }
 
-.card ion-toggle {
+.listing-card ion-grid {
+  padding: 0;
+}
+
+.listing-card ion-toggle {
   --background: #dfdede;
 }
 
-.card .toggle-container {
-  border-radius: 25px;
-  border: 1px solid #1dbf73;
-  max-width: 135px;
-  min-height: 30px;
+.listing-card .toggle-row ion-icon {
+  font-size: 30px;
 }
 
-.card .toggle-container .item-inner {
+.listing-card .toggle-container {
+  border-radius: 25px;
+  border: 1px solid #1dbf73;
+  max-width: none;
+  min-height: 28px;
+  padding-left: 8px;
+}
+
+.listing-card .toggle-container .item-inner {
   padding-right: 0;
   -webkit-padding-end: 0 !important;
   padding-inline-end: 0 !important;
 }
 
-.card .toggle-container .item-inner ion-label {
-  font-size: 12px;
+.listing-card .toggle-container .item-inner ion-label {
+  font-size: 10px;
   color: #1dbf73;
   text-transform: uppercase;
   margin: 0;
 }
 
-.card .toggle-container .item-inner .toggle {
+.listing-card .toggle-container .item-inner .toggle {
   padding: 5px 8px 5px 5px;
 }
 
-.card .button-box-container .upgrade-box {
+.listing-card .button-box-container .upgrade-box {
   background-color: #fdfaef;
 }
 
-.card .button-box-container .upgrade-box button {
+.listing-card .button-box-container .upgrade-box button {
   background-color: #ffd15b;
 }
 
-.card .button-box-container .boost-box {
+.listing-card .button-box-container .boost-box {
   background-color: #fff9fb;
 }
 
-.card .button-box-container .boost-box button {
+.listing-card .button-box-container .boost-box button {
   background-color: #1dbf73;
 }
 
-.card .card-header {
+.listing-card .card-header {
   padding: 0;
   font-weight: 500;
   white-space: normal;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-px-10 {
+.px-10 {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.px-5 {
+  padding: 0 5px !important;
+}
+
+.pl-10 {
+  padding-left: 10px !important;
+}
+
+.pl-5 {
+  padding-left: 5px !important;
+}
+
+.custom-badge-primary {
+  background-color: #63748e;
+  border-radius: 2px;
+  padding: 5px 15px;
+  min-height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.color-primary {
+  color: #1dbf73 !important;
+}
+
+.bg-primary {
+  background-color: #1dbf73 !important;
 }
 
 page-home .toggle-container {
