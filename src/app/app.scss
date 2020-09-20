@@ -14,34 +14,67 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-.listing-thumbnail {
-  width: 75px;
-  height: 75px;
-}
-
-ion-toggle {
-  --background: #dfdede;
-}
-
-.toggle-container {
-  border-radius: 25px;
-  border: 1px solid #2dd36f;
-  padding: 0px;
-}
-
-.toggle-container ion-label {
-  font-size: 12px;
-}
-
-.toggle-container .item-inner {
-  padding-right: 0;
-  padding-inline-end: 0 !important;
-}
-
 ion-toggle {
   /* zoom: 0.5; */
 }
 
 .small-label {
   font-size: 12px !important;
+}
+
+.card {
+  .listing-thumbnail {
+    width: 75px;
+    height: 75px;
+  }
+
+  ion-toggle {
+    --background: #dfdede;
+  }
+
+  .toggle-container {
+    border-radius: 25px;
+    border: 1px solid #1dbf73;
+    max-width: 135px;
+    min-height: 30px;
+
+    .item-inner {
+      padding-right: 0;
+      padding-inline-end: 0 !important;
+
+      ion-label {
+        font-size: 12px;
+        color: #1dbf73;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .toggle {
+        padding: 5px 8px 5px 5px;
+      }
+    }
+  }
+
+  .button-box-container {
+    .col {
+      // padding: 5px;
+    }
+    .upgrade-box {
+      background-color: #fdfaef;
+      button {
+        background-color: #ffd15b;
+      }
+    }
+    .boost-box {
+      background-color: #fff9fb;
+      button {
+        background-color: #1dbf73;
+      }
+    }
+  }
+  .card-header {
+    padding: 0;
+    font-weight: 500;
+    white-space: normal;
+  }
 }

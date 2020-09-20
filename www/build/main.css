@@ -25678,37 +25678,67 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-.listing-thumbnail {
-  width: 75px;
-  height: 75px;
-}
-
-ion-toggle {
-  --background: #dfdede;
-}
-
-.toggle-container {
-  border-radius: 25px;
-  border: 1px solid #2dd36f;
-  padding: 0px;
-}
-
-.toggle-container ion-label {
-  font-size: 12px;
-}
-
-.toggle-container .item-inner {
-  padding-right: 0;
-  -webkit-padding-end: 0 !important;
-  padding-inline-end: 0 !important;
-}
-
 ion-toggle {
   /* zoom: 0.5; */
 }
 
 .small-label {
   font-size: 12px !important;
+}
+
+.card .listing-thumbnail {
+  width: 75px;
+  height: 75px;
+}
+
+.card ion-toggle {
+  --background: #dfdede;
+}
+
+.card .toggle-container {
+  border-radius: 25px;
+  border: 1px solid #1dbf73;
+  max-width: 135px;
+  min-height: 30px;
+}
+
+.card .toggle-container .item-inner {
+  padding-right: 0;
+  -webkit-padding-end: 0 !important;
+  padding-inline-end: 0 !important;
+}
+
+.card .toggle-container .item-inner ion-label {
+  font-size: 12px;
+  color: #1dbf73;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card .toggle-container .item-inner .toggle {
+  padding: 5px 8px 5px 5px;
+}
+
+.card .button-box-container .upgrade-box {
+  background-color: #fdfaef;
+}
+
+.card .button-box-container .upgrade-box button {
+  background-color: #ffd15b;
+}
+
+.card .button-box-container .boost-box {
+  background-color: #fff9fb;
+}
+
+.card .button-box-container .boost-box button {
+  background-color: #1dbf73;
+}
+
+.card .card-header {
+  padding: 0;
+  font-weight: 500;
+  white-space: normal;
 }
 
 page-home .toggle-container {

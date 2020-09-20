@@ -2,31 +2,67 @@
   <ion-row>
     <ion-col col-auto>
       <img class="listing-thumbnail" src="https://picsum.photos/200" />
+      <button ion-button color="light" full>Ok</button>
     </ion-col>
+
     <ion-col>
       <ion-grid>
         <ion-row>
           <ion-col>
             <ion-row>
-              <ion-col>
+              <ion-col col-auto>
                 <ion-badge color="primary">Sales</ion-badge>
               </ion-col>
-              <ion-col>
+              <ion-col col-auto>
                 <ion-icon name="logo-twitter" item-start></ion-icon>
               </ion-col>
             </ion-row>
           </ion-col>
-          <ion-col size="auto">
+
+          <ion-col col-auto>
             <ion-item class="toggle-container">
-              <ion-label class="small-label">Sam</ion-label>
+              <ion-label class="small-label">Activate</ion-label>
               <ion-toggle color="secondary" checked="false"></ion-toggle>
             </ion-item>
           </ion-col>
         </ion-row>
-        <ion-row>
-          <ion-card-header> Header </ion-card-header>
-        </ion-row>
+
+        <ion-col col-12>
+          <ion-card-header>
+            Elegant luxuary modern build house
+          </ion-card-header>
+        </ion-col>
+        <span> <ion-icon name="pin"></ion-icon> sub title</span>
+        <div>
+          <ion-icon name="ios-camera-outline"></ion-icon>
+          <ion-badge color="secondary">no images uploaded</ion-badge>
+        </div>
       </ion-grid>
+    </ion-col>
+  </ion-row>
+
+  <!-- 2nd row -->
+
+  <ion-row class="button-box-container">
+    <ion-col col-6>
+      <div class="upgrade-box">
+        <span>sample text this is</span>
+
+        <button ion-button icon-start full>
+          <ion-icon name="home"></ion-icon>
+          Left Icon
+        </button>
+      </div>
+    </ion-col>
+    <ion-col col-6>
+      <div class="boost-box">
+        <span>sample text this is</span>
+
+        <button ion-button icon-start full>
+          <ion-icon name="home"></ion-icon>
+          Left Icon
+        </button>
+      </div>
     </ion-col>
   </ion-row>
 </ion-card>
