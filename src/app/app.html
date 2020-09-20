@@ -65,4 +65,83 @@
       </div>
     </ion-col>
   </ion-row>
+
+  <!-- 3rd row for after buttons -->
+
+  <ion-row>
+    <ion-col col-auto>
+      <ion-item>
+        <ion-icon name="football" item-start></ion-icon>
+        <h2>Museum of Football</h2>
+        <p>11 N. Way St, Madison, WI 53703</p>
+      </ion-item>
+    </ion-col>
+    <ion-col col-auto>
+      <ion-item>
+        <ion-icon name="football" item-start></ion-icon>
+        <h2>Museum of Football</h2>
+        <p>11 N. Way St, Madison, WI 53703</p>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <!-- collapse button area -->
+  <ion-row justify-content-center>
+    <ion-col col-auto>
+      <button ion-button icon-end color="dark" id="viewMore" outline>
+        View More
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-col>
+  </ion-row>
+
+  <!-- expand area -->
+  <ion-grid id="expandAred">
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-icon name="football" item-start></ion-icon>
+            <h2>Museum of Football</h2>
+            <p>11 N. Way St, Madison, WI 53703</p>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="football" item-start></ion-icon>
+            <h2>Museum of Football</h2>
+            <p>11 N. Way St, Madison, WI 53703</p>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-icon name="football" item-start></ion-icon>
+            <h2>Museum of Football</h2>
+            <p>11 N. Way St, Madison, WI 53703</p>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="football" item-start></ion-icon>
+            <h2>Museum of Football</h2>
+            <p>11 N. Way St, Madison, WI 53703</p>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="px-10">
+        <button ion-button icon-only block outline>
+          <ion-icon name="home"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="danger" block outline icon-only>
+          <ion-icon name="remove-circle" is-active="false"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-card>
