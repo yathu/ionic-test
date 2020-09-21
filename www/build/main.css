@@ -25694,6 +25694,19 @@ ion-toggle {
   padding: 0;
 }
 
+.listing-card .image-container {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.listing-card .image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .listing-card ion-toggle {
   --background: #dfdede;
 }
@@ -25702,7 +25715,7 @@ ion-toggle {
   font-size: 30px;
 }
 
-.listing-card .toggle-container {
+.listing-card .toggle-row .toggle-container {
   border-radius: 25px;
   border: 1px solid #1dbf73;
   max-width: none;
@@ -25710,21 +25723,141 @@ ion-toggle {
   padding-left: 8px;
 }
 
-.listing-card .toggle-container .item-inner {
+.listing-card .toggle-row .toggle-container .item-inner {
   padding-right: 0;
   -webkit-padding-end: 0 !important;
   padding-inline-end: 0 !important;
 }
 
-.listing-card .toggle-container .item-inner ion-label {
+.listing-card .toggle-row .toggle-container .item-inner ion-label {
   font-size: 10px;
   color: #1dbf73;
   text-transform: uppercase;
   margin: 0;
 }
 
-.listing-card .toggle-container .item-inner .toggle {
+.listing-card .toggle-row .toggle-container .item-inner .toggle {
   padding: 5px 8px 5px 5px;
+}
+
+.listing-card .location {
+  color: #929292;
+  font-size: 13px;
+}
+
+.listing-card .location ion-icon {
+  color: #1dbf73;
+}
+
+.listing-card .cam-btn-row {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.listing-card .cam-btn-row ion-icon {
+  font-size: 28px;
+}
+
+.listing-card .cam-btn-row button {
+  background-color: #b3b9c5;
+}
+
+.listing-card .cam-btn-row button,
+.listing-card .cam-btn-row ion-badge {
+  height: 28px;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.listing-card .cam-btn-row .cam-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.listing-card .cam-btn-row .cam-col ion-icon {
+  font-size: 44px;
+  line-height: 28px;
+  overflow: hidden;
+  margin-right: 7px;
+}
+
+.listing-card .cam-btn-row .cam-col ion-badge {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #bb93b8;
+}
+
+.listing-card .button-box-container {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.listing-card .button-box-container ion-col {
+  padding: 5px;
+}
+
+@media (max-width: 575.98px) {
+  .listing-card .button-box-container ion-col:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+.listing-card .button-box-container ion-col > div {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.listing-card .button-box-container ion-col > div button {
+  margin: 0;
+}
+
+.listing-card .button-box-container ion-col > div span {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+  .listing-card .button-box-container ion-col > div span {
+    margin-bottom: 25px;
+  }
 }
 
 .listing-card .button-box-container .upgrade-box {
@@ -25739,6 +25872,10 @@ ion-toggle {
   background-color: #fff9fb;
 }
 
+.listing-card .button-box-container .boost-box ion-item {
+  background-color: transparent;
+}
+
 .listing-card .button-box-container .boost-box button {
   background-color: #1dbf73;
 }
@@ -25747,9 +25884,9 @@ ion-toggle {
   padding: 0;
   font-weight: 500;
   white-space: normal;
-  line-height: 1;
+  line-height: 1.3;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .px-10 {
@@ -25773,7 +25910,7 @@ ion-toggle {
   background-color: #63748e;
   border-radius: 2px;
   padding: 5px 15px;
-  min-height: 30px;
+  min-height: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

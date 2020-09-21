@@ -1,23 +1,20 @@
 <ion-content>
   <ion-card class="listing-card">
     <ion-row align-items-start>
-      <ion-col col-3 col-sm-3>
+      <ion-col class="image-container" col-3 col-sm-3>
         <img class="listing-thumbnail" src="https://picsum.photos/200" />
       </ion-col>
 
       <ion-col class="pl-10">
         <ion-grid>
-          <ion-row class="toggle-row">
+          <ion-row class="toggle-row" align-items-center>
             <ion-col>
               <ion-row align-items-center>
                 <ion-col col-auto>
                   <ion-badge class="custom-badge-primary">Sales</ion-badge>
                 </ion-col>
                 <ion-col col-auto class="pl-5">
-                  <ion-icon
-                    name="arrow-dropup-circle"
-                    class="color-primary"
-                  ></ion-icon>
+                  <img src="../assets/imgs/arrow-up.png" />
                 </ion-col>
               </ion-row>
             </ion-col>
@@ -35,31 +32,32 @@
               <ion-card-header>
                 Elegant luxuary modern build house
               </ion-card-header>
-              <span> <ion-icon name="pin"></ion-icon> sub title</span>
+              <div class="location">
+                <ion-icon name="pin"></ion-icon> No: 150, Anura Mawatha,
+                Nugegoda.
+              </div>
             </ion-col>
           </ion-row>
         </ion-grid>
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="cam-btn-row">
       <ion-col col-3 col-sm-3>
-        <button ion-button color="light" full>Ok</button>
+        <button ion-button small block>Ok</button>
       </ion-col>
-      <ion-col class="pl-10">
-        <div>
-          <ion-icon name="ios-camera-outline"></ion-icon>
-          <ion-badge color="secondary">no images uploaded</ion-badge>
-        </div>
+      <ion-col class="pl-10 cam-col">
+        <ion-icon name="ios-camera-outline"></ion-icon>
+        <ion-badge>no images uploaded</ion-badge>
       </ion-col>
     </ion-row>
 
     <!-- 2nd row -->
 
     <ion-row class="button-box-container">
-      <ion-col col-6>
+      <ion-col col-12 col-sm-6>
         <div class="upgrade-box">
-          <span>sample text this is</span>
+          <span> Want up to 30x more views a month for your ad? </span>
 
           <button ion-button icon-start full>
             <ion-icon name="home"></ion-icon>
@@ -67,9 +65,19 @@
           </button>
         </div>
       </ion-col>
-      <ion-col col-6>
+      <ion-col col-12 col-sm-6>
         <div class="boost-box">
-          <span>sample text this is</span>
+          <span>
+            <ion-row>
+              <ion-col col-auto>
+                <img src="../assets//imgs/warning.png" />
+              </ion-col>
+              <ion-col>
+                Your ad has drop to page 11. Boosts your ad now bring it top of
+                the list.
+              </ion-col>
+            </ion-row>
+          </span>
 
           <button ion-button icon-start full>
             <ion-icon name="home"></ion-icon>
@@ -84,16 +92,18 @@
     <ion-row>
       <ion-col col-auto>
         <ion-item>
-          <ion-icon name="football" item-start></ion-icon>
-          <h2>Museum of Football</h2>
-          <p>11 N. Way St, Madison, WI 53703</p>
+          <!-- <ion-icon name="football" ></ion-icon> -->
+          <ion-icon ios="ios-eye" md="md-eye" item-start></ion-icon>
+
+          <p>No Of Views</p>
+          <h2>1230</h2>
         </ion-item>
       </ion-col>
       <ion-col col-auto>
         <ion-item>
           <ion-icon name="football" item-start></ion-icon>
-          <h2>Museum of Football</h2>
-          <p>11 N. Way St, Madison, WI 53703</p>
+          <p>Total Leads</p>
+          <h2>250</h2>
         </ion-item>
       </ion-col>
     </ion-row>
