@@ -25684,6 +25684,7 @@ ion-toggle {
 
 .listing-card {
   padding: 5px;
+  max-width: 400pxgit;
 }
 
 .listing-card ion-col {
