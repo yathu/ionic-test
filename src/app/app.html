@@ -1,4 +1,105 @@
 <ion-content>
+  <ion-card class="form-grid">
+    <ion-grid class="py-0">
+      <ion-row id="searchTitle" align-items-center>
+        <ion-col>
+          <h2>Search</h2>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-icon name="md-arrow-dropup"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="pt-0" id="search-form">
+      <!-- search title row ends -->
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-input type="text" placeholder="Username"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>Gaming</ion-label>
+            <ion-select [(ngModel)]="gaming">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label>Gaming</ion-label>
+            <ion-select [(ngModel)]="gaming">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>Gaming</ion-label>
+            <ion-select [(ngModel)]="gaming">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label>Gaming</ion-label>
+            <ion-select [(ngModel)]="gaming">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>Gaming</ion-label>
+            <ion-select [(ngModel)]="gaming">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button ion-button block class="search-btn">Search Now</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!-- form ends -->
   <ion-card class="listing-card">
     <ion-row align-items-start>
       <ion-col class="image-container" col-3 col-sm-3>
@@ -92,16 +193,18 @@
     <ion-row>
       <ion-col col-auto>
         <ion-item>
-          <!-- <ion-icon name="football" ></ion-icon> -->
-          <ion-icon ios="ios-eye" md="md-eye" item-start></ion-icon>
-
+          <ion-thumbnail item-start>
+            <img src="../assets/imgs/eye.png" alt="" item-start />
+          </ion-thumbnail>
           <p>No Of Views</p>
           <h2>1230</h2>
         </ion-item>
       </ion-col>
       <ion-col col-auto>
         <ion-item>
-          <ion-icon name="football" item-start></ion-icon>
+          <ion-thumbnail item-start>
+            <img src="../assets/imgs/tel.png" alt="" item-start />
+          </ion-thumbnail>
           <p>Total Leads</p>
           <h2>250</h2>
         </ion-item>
@@ -109,11 +212,11 @@
     </ion-row>
 
     <!-- collapse button area -->
-    <ion-row justify-content-center>
+    <ion-row class="view-more-container" justify-content-center>
       <ion-col col-auto>
         <button ion-button icon-end color="dark" id="viewMore" outline>
           View More
-          <ion-icon name="home"></ion-icon>
+          <ion-icon name="md-arrow-dropup"></ion-icon>
         </button>
       </ion-col>
     </ion-row>
@@ -121,48 +224,90 @@
     <!-- expand area -->
     <ion-grid id="expandAred">
       <ion-row>
+        <!-- expand col 1  -->
         <ion-col>
           <ion-list>
             <ion-item>
-              <ion-icon name="football" item-start></ion-icon>
-              <h2>Museum of Football</h2>
-              <p>11 N. Way St, Madison, WI 53703</p>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/mail.png" alt="" item-start />
+              </ion-thumbnail>
+              <p>Email Leads</p>
+              <h2>250</h2>
             </ion-item>
 
             <ion-item>
-              <ion-icon name="football" item-start></ion-icon>
-              <h2>Museum of Football</h2>
-              <p>11 N. Way St, Madison, WI 53703</p>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/mail.png" alt="" item-start />
+              </ion-thumbnail>
+              <p>Email Leads</p>
+              <h2>250</h2>
+            </ion-item>
+
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/calender.png" alt="" item-start />
+              </ion-thumbnail>
+              <p>Last Updated Date</p>
+              <h2>250</h2>
+            </ion-item>
+
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/object.png" alt="" item-start />
+              </ion-thumbnail>
+              <p>Object ID</p>
+              <h2>250</h2>
             </ion-item>
           </ion-list>
         </ion-col>
 
+        <!-- expand col 2 -->
         <ion-col>
           <ion-list>
             <ion-item>
-              <ion-icon name="football" item-start></ion-icon>
-              <h2>Museum of Football</h2>
-              <p>11 N. Way St, Madison, WI 53703</p>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/tel.png" alt="" item-start />
+              </ion-thumbnail>
+              <p>Telephone Leads</p>
+              <h2>250</h2>
             </ion-item>
 
             <ion-item>
-              <ion-icon name="football" item-start></ion-icon>
-              <h2>Museum of Football</h2>
-              <p>11 N. Way St, Madison, WI 53703</p>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/tel.png" alt="" item-start />
+              </ion-thumbnail>
+              <p>Ad Posted Date:</p>
+              <h2>250</h2>
+            </ion-item>
+
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/tel.png" alt="" item-start />
+              </ion-thumbnail>
+              <p>Expiery Date</p>
+              <h2>250</h2>
+            </ion-item>
+
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/tel.png" alt="" item-start />
+              </ion-thumbnail>
+              <p>Last Updated Date</p>
+              <h2>250</h2>
             </ion-item>
           </ion-list>
         </ion-col>
       </ion-row>
 
-      <ion-row>
-        <ion-col class="px-10">
+      <ion-row class="btn-row">
+        <ion-col>
           <button ion-button icon-only block outline>
-            <ion-icon name="home"></ion-icon>
+            <ion-icon name="md-create"></ion-icon>
           </button>
         </ion-col>
         <ion-col>
-          <button ion-button color="danger" block outline icon-only>
-            <ion-icon name="remove-circle" is-active="false"></ion-icon>
+          <button ion-button block outline icon-only>
+            <ion-icon name="ios-trash-outline" is-active="false"></ion-icon>
           </button>
         </ion-col>
       </ion-row>
