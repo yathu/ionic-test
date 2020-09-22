@@ -51,6 +51,13 @@
         slideToggle(document.getElementById("expandAred"), 200);
       };
 
+      //toggle function for search
+      var searchTitle = document.getElementById("searchTitle");
+      searchTitle.onclick = function (e) {
+        slideToggle(document.getElementById("searchForm"), 200);
+      };
+      //toggle function for search
+
       let slideUp = (target, duration) => {
         target.style.transitionProperty = "height, margin, padding"; /* [1.1] */
         target.style.transitionDuration = duration + "ms"; /* [1.2] */

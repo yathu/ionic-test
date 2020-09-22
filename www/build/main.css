@@ -25689,6 +25689,11 @@ ion-toggle {
   -ms-flex-pack: start;
   justify-content: start;
   background-color: #63748f;
+  margin-bottom: 20px;
+}
+
+.form-grid #searchTitle {
+  cursor: pointer;
 }
 
 .form-grid h2 {

@@ -22,6 +22,11 @@ ion-toggle {
   max-width: 400px;
   justify-content: start;
   background-color: #63748f;
+  margin-bottom: 20px;
+
+  #searchTitle {
+    cursor: pointer;
+  }
 
   h2 {
     font-size: 18px;
