@@ -14,12 +14,112 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background-color: #fc6876;
+  border: 1px solid #fc6876;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fc6876;
+  -webkit-transition: .4s;
+  transition: .4s;
+  top: 3px;
+}
+
+input:checked + .slider {
+  // background-color: #1dbf73;
+  border: 1px solid #1dbf73;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(74px);
+  -ms-transform: translateX(74px);
+  transform: translateX(74px);
+}
+
+/*------ ADDED CSS ---------*/
+.on
+{
+  display: none;
+  left: 45%;
+  color: #1dbf73;
+
+}
+
+.off{
+  left: 60%;
+color: #fc6876;
+}
+
+.on, .off
+{
+  // color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+
+
+input:checked + .slider.round::before {
+  background-color: #1dbf73 !important;
+}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}
+
+
+
+
+
+  //my css start---------------------------------
 ion-toggle {
   /* zoom: 0.5; */
 }
 
 .form-grid {
-  max-width: 400px;
+  max-width: 600px;
   justify-content: start;
   background-color: #63748f;
   margin-bottom: 20px;
@@ -57,7 +157,7 @@ ion-toggle {
 
 .listing-card {
   padding: 5px;
-  max-width: 400px;
+  max-width: 600px;
   // ion-row {
   //   margin: 0;
   // }
@@ -159,11 +259,18 @@ ion-toggle {
 
   .button-box-container {
     align-items: stretch;
+
+    ion-col:nth-child(1){
+      padding-right: 5px;
+    }
+    ion-col:nth-child(2){
+      padding-left: 5px;
+    }
     ion-col {
-      padding: 5px;
+      // padding: 5px;
       &:first-child {
         @media (max-width: 575.98px) {
-          margin-bottom: 10px;
+          // margin-bottom: 10px;
         }
       }
 
@@ -176,6 +283,19 @@ ion-toggle {
 
         button {
           margin: 0;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 20px 11px;
+
+          @media (max-width:575.98px) {
+            font-size: 10px;
+          }
+
+          img{
+            width: auto;
+            max-height: 20px;
+          }
         }
 
         span {
@@ -191,16 +311,26 @@ ion-toggle {
 
       button {
         background-color: #ffd15b;
+        color: #222;
+
       }
     }
     .boost-box {
       background-color: #fff9fb;
+
+      ion-col:nth-child(1){
+       @media (max-width:575.98px) {
+        display: none;
+       }
+      }
+
 
       ion-item {
         background-color: transparent;
       }
       button {
         background-color: #1dbf73;
+        color: #ffffff;
       }
     }
   }
@@ -244,8 +374,27 @@ ion-toggle {
         padding: 5px 5px;
         button {
           border: 1px solid #d0d1d2;
+          color: #898989;
+        }
+
+        .delete-btn{
+          ion-icon{
+          color: #fc6876;
+          }
+        }
+
+        .edit-btn{
+          ion-icon{
+            color: #8aa4ee;
+          }
         }
       }
+    }
+  }
+
+  ion-item{
+    p{
+      white-space: normal;
     }
   }
 

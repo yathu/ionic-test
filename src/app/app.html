@@ -121,10 +121,18 @@
             </ion-col>
 
             <ion-col col-auto>
-              <ion-item class="toggle-container">
+
+              <label class="switch"><input type="checkbox" id="togBtn">
+                <div class="slider round">
+                  <!--ADDED HTML --><span class="on">ACTIVE</span><span class="off">INACTIVE</span>
+                  <!--END-->
+                </div>
+              </label>
+
+              <!-- <ion-item class="toggle-container">
                 <ion-label>Activate</ion-label>
                 <ion-toggle color="secondary" checked="true"></ion-toggle>
-              </ion-item>
+              </ion-item> -->
             </ion-col>
           </ion-row>
 
@@ -156,17 +164,19 @@
     <!-- 2nd row -->
 
     <ion-row class="button-box-container">
-      <ion-col col-12 col-sm-6>
+      <ion-col col-6 col-sm-6>
         <div class="upgrade-box">
           <span> Want up to 30x more views a month for your ad? </span>
 
           <button ion-button icon-start full>
-            <ion-icon name="home"></ion-icon>
-            Left Icon
+            <ion-icon>
+              <img src="../assets//imgs/sync.png" />
+            </ion-icon>
+            Upgrade this ad now
           </button>
         </div>
       </ion-col>
-      <ion-col col-12 col-sm-6>
+      <ion-col col-6 col-sm-6>
         <div class="boost-box">
           <span>
             <ion-row>
@@ -181,8 +191,10 @@
           </span>
 
           <button ion-button icon-start full>
-            <ion-icon name="home"></ion-icon>
-            Left Icon
+            <ion-icon>
+              <img src="../assets//imgs/arrrow-up-rignt.png" />
+            </ion-icon>
+            Boosts this ad now
           </button>
         </div>
       </ion-col>
@@ -215,8 +227,9 @@
     <ion-row class="view-more-container" justify-content-center>
       <ion-col col-auto>
         <button ion-button icon-end color="dark" id="viewMore" outline>
-          View More
-          <ion-icon name="md-arrow-dropup"></ion-icon>
+          <span id="viewMoreLabel">View More</span>
+          <ion-icon id="viewUp" name="md-arrow-dropup"></ion-icon>
+          <ion-icon id="viewDown" name="md-arrow-dropdown"></ion-icon>
         </button>
       </ion-col>
     </ion-row>
@@ -225,7 +238,7 @@
     <ion-grid id="expandAred">
       <ion-row>
         <!-- expand col 1  -->
-        <ion-col>
+        <ion-col col-6>
           <ion-list>
             <ion-item>
               <ion-thumbnail item-start>
@@ -262,7 +275,7 @@
         </ion-col>
 
         <!-- expand col 2 -->
-        <ion-col>
+        <ion-col col-6>
           <ion-list>
             <ion-item>
               <ion-thumbnail item-start>
@@ -301,13 +314,15 @@
 
       <ion-row class="btn-row">
         <ion-col>
-          <button ion-button icon-only block outline>
+          <button class="edit-btn" ion-button icon-only block outline>
             <ion-icon name="md-create"></ion-icon>
+            Edit
           </button>
         </ion-col>
         <ion-col>
-          <button ion-button block outline icon-only>
+          <button class="delete-btn" ion-button block outline icon-only>
             <ion-icon name="ios-trash-outline" is-active="false"></ion-icon>
+            Delete
           </button>
         </ion-col>
       </ion-row>
