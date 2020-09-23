@@ -26067,6 +26067,10 @@ ion-toggle {
   padding-top: 10px;
 }
 
+.listing-card #expandAred ion-item {
+  border: 0;
+}
+
 .listing-card #expandAred .btn-row ion-col {
   padding: 5px 5px;
 }
